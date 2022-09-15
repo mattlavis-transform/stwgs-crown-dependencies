@@ -1,0 +1,68 @@
+{% extends "layout_start.html" %}
+{% block pageTitle %}
+    {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+    {{ govukBreadcrumbs({ items: [ {
+    text: "Home", href: "https://www.gov.uk/" }, { text: "Business and
+    self-employed", href: "https://www.gov.uk/browse/business" }, { text:
+    "Importing", href: "https://www.gov.uk/browse/business/imports" } ] })
+    }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl">
+                {{ serviceName }}
+            </h1>
+
+            <p>
+                Use this service to get information about importing and exporting goods
+                for your business, including:
+            </p>
+
+            <ul class="govuk-list govuk-list--bullet">
+                <li>how to register your business for trading</li>
+                <li>which licences and certificates you need for your goods</li>
+                <li>paying the right VAT and duties for your goods</li>
+                <li>how to make declarations for your goods to clear the UK border</li>
+                <li>which commodity codes you'll need to classify your goods</li>
+            </ul>
+
+            <p>You'll need to know:</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+                <li>where the goods are going to (and coming from if you're importing)</li>
+                <li>when your goods will arrive at the UK border if you're importing - it
+                    does not have to be the exact date</li>
+            </ul>
+
+            {{
+                govukButton({ text: "Start now", href: "/type-of-trade", isStartButton: true })
+            }}
+            <p>&nbsp;</p>
+
+            <h2 id="get-help-if-you-have-difficulty-using-a-computer" class="govuk-heading-m">
+                Get help if you have difficulty using a computer
+            </h2>
+
+            <p>
+                If you have difficulty using a computer, you can call the Assisted Digital
+                Team.
+            </p>
+
+            <div class="contact">
+                <p>
+                    Assisted Digital Team<br/>
+                    Telephone: 020 7215 5000<br/>
+                    Monday to Friday, 9am to 5pm<br/>
+                    <a href="/call-charges">Find out about call charges</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

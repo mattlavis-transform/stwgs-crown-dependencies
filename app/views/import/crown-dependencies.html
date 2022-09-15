@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block pageTitle %}
+    {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+    {{ govukPhaseBanner({
+        tag: {
+            text: "beta"
+        },
+        html: 'This is a new service - your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+    }) }}
+
+    {{ govukBackLink({
+        text: "Back",
+        href: "javascript:history.back();"
+    }) }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl">
+                Importing into the UK from Jersey and Guernsey
+            </h1>
+
+            <p class="govuk-body-l">
+                Lorem ipsum dolor sit amet, nisi cupidatat aute dolor.
+            </p>
+
+            <ul class="govuk-list govuk-list--bullet">
+                <li>Lorem ipsum dolor sit amet, excepteur sunt cillum laboris labore commodo in. Ut occaecat minim eiusmod et dolore dolor voluptate dolor.</li>
+                <li>Ut sunt fugiat mollit minim ipsum aute sint. Minim id officia sunt aute et eiusmod occaecat. Aute laboris reprehenderit aute laborum culpa et nisi quis tempor cupidatat est irure. Veniam laboris exercitation officia dolore tempor ut cupidatat exercitation elit.</li>
+                <li>Dolor laborum excepteur irure laborum incididunt officia Lorem veniam dolor culpa nulla deserunt sint et minim. Esse nisi esse duis. Est consequat minim aute amet proident enim sint nulla sunt adipisicing minim deserunt sint amet sunt.</li>
+            </ul>
+
+        </div>
+    </div>
+
+{% endblock %}

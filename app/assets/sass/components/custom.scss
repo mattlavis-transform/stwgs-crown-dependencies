@@ -1,0 +1,20 @@
+.autocomplete__menu {
+    li {
+        font-family: "GDS Transport", arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-weight: normal !important;
+
+        strong {
+            font-weight: normal !important;
+        }
+    }
+
+    strong {
+        font-weight: normal !important;
+    }
+}
+
+strong.govuk-warning-text__text.normal {
+    font-weight: normal;
+}
