@@ -305,6 +305,7 @@ help us to improve it.' }) }} {{ govukBackLink({ text: "Back", href:
 
       {{ govukButton({ text: "Continue" }) }}
       <input type="hidden" name="phase" id="phase" value="export-destination-country" />
+      
     </form>
   </div>
 </div>
@@ -324,6 +325,6 @@ help us to improve it.' }) }} {{ govukBackLink({ text: "Back", href:
   })
 </script>
 
-{{ context.location_graph_file }}
+{# {{ context.location_graph_file }} #}
 
 {% endblock %}
