@@ -16,6 +16,7 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/task-list";
 
 @import "components/custom";
+@import "components/location";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
-@import "./location-autocomplete.min.css"
+// @import "./location-autocomplete.min.css"
